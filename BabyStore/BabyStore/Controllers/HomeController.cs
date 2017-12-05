@@ -15,9 +15,9 @@ namespace BabyStore.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult About(string id)
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Your application description page. The number is " + id;
 
             return View();
         }
